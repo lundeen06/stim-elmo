@@ -5,7 +5,7 @@ import platform
 
 def text_to_speech(text):
     # Create a gTTS object
-    speech = gTTS(text=text, lang='en', slow='slow')
+    speech = gTTS(text=text, lang='en', tld='com-au', slow='slow')
     
     # Use getpass.getuser() to get the current user's name
     user_name = getpass.getuser()
@@ -29,6 +29,3 @@ def text_to_speech(text):
         os.system(f'open {save_path}')
     else: # Assume Linux
         os.system(f'xdg-open {save_path}')
-
-# Example usage
-text_to_speech('hello, world!')
