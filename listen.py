@@ -14,7 +14,7 @@ def listen_and_transcribe():
                 text = recognizer.recognize_google(audio_data)
                 print(text)
             except sr.UnknownValueError:
-                print("Google Web Speech API could not understand audio")
+                print("Elmo can not understand your tomfoolery and shenanigans at this moment. Repeat that again, you bumbling buffoon >:(")
             except sr.RequestError as e:
                 print("Could not request results from Google Web Speech API service; {0}".format(e))
 
